@@ -1,15 +1,108 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<title>211</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2402 211寝室主页</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e90ff, #ff7f50);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 10px #000;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h2 {
+            margin: 10px 0 5px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .card a {
+            display: block;
+            margin: 10px auto;
+            width: 80%;
+            text-align: center;
+            text-decoration: none;
+            color: #ff7f50;
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+        .card a:hover {
+            background: #ff4500;
+            color: #fff;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 0.9rem;
+            margin-top: 20px;
+            text-shadow: 1px 1px 5px #000;
+        }
+    </style>
 </head>
-
 <body>
-<p><span style=""><a href="https://caoxuan5211.github.io/cx-homework/">曹轩</a></span></p>
-<p><a href="https://dawn6686.github.io/2024newpractice/web_homework/">张仕祺</a></p>
-<p><a href="https://mikulovessy.github.io/shijian-homework/">邵书毅</a></p>
-<p><a href="https://cupid-qrq.github.io/Myweb/">覃锐谦</a></p>
-<p>cs2402班 211寝室</p>
+    <header>🏡 欢迎来到 CS2402 211寝室主页</header>
+    <main>
+        <div class="card">
+            <img src="image/曹轩.png" alt="曹轩">
+            <h2>曹轩</h2>
+            <a href="https://caoxuan5211.github.io/cx-homework/" target="_blank">访问主页</a>
+        </div>
+        <div class="card">
+            <img src="image/张仕祺.png" alt="张仕祺">
+            <h2>张仕祺</h2>
+            <a href="https://dawn6686.github.io/2024newpractice/web_homework/" target="_blank">访问主页</a>
+        </div>
+        <div class="card">
+            <img src="image/邵书毅.png" alt="邵书毅">
+            <h2>邵书毅</h2>
+            <a href="https://mikulovessy.github.io/shijian-homework/" target="_blank">访问主页</a>
+        </div>
+        <div class="card">
+            <img src="image/覃锐谦.png" alt="覃锐谦">
+            <h2>覃锐谦</h2>
+            <a href="https://cupid-qrq.github.io/Myweb/" target="_blank">访问主页</a>
+        </div>
+    </main>
+    <footer>CS2402 211寝室</footer>
 </body>
 </html>
