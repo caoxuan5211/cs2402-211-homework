@@ -22,6 +22,19 @@
             letter-spacing: 2px;
             text-shadow: 2px 2px 10px #000;
         }
+        header button {
+            font-size: 1rem;
+            padding: 10px 20px;
+            background: #ff7f50;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        header button:hover {
+            background: #ff4500;
+        }
         main {
             display: flex;
             flex-wrap: wrap;
@@ -80,7 +93,12 @@
     </style>
 </head>
 <body>
-    <header>🏡 欢迎来到 CS2402 211寝室主页</header>
+    <header>
+        <button onclick="window.location.href='https://caoxuan5211.github.io/CS2402/'">
+            返回班级主页
+        </button>
+        🏡 欢迎来到 CS2402 211寝室主页
+    </header>
     <main>
         <div class="card">
             <img src="image/曹轩.png" alt="曹轩">
